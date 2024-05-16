@@ -62,7 +62,7 @@ const NavigationContainer = () => {
           />
            
           <NavigationOption
-            to="/"
+            to="/SayCheese-f"
             
             
             label="Logout"
