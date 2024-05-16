@@ -26,7 +26,7 @@ function App() {
     <HashRouter>
       <CartProvider> {/* Wrap the entire application with CartProvider */}
         <Routes>
-          <Route path="/SayCheese-f" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Category" element={<Category />} />
           <Route path="/Booking" element={<Booking />} />
           <Route path="/About" element={<About />} />
@@ -34,18 +34,7 @@ function App() {
           <Route path="/Cart" element={<Cart />} /> {/* Add route for Cart */}
 
           <Route path="/Login" element={<Login />} />
-          <Route path="/Category/Login" element={<Login />} />
-          <Route path="/Gallery/Login" element={<Login />} />
-          <Route path="/Booking/Login" element={<Login />} />
-          <Route path="/About/Login" element={<Login />} />
-          <Route path="/About/Login/Login" element={<Login />} />
-          <Route path="/Login/Login" element={<Login />} />
-          <Route path="/Login/Booking" element={<Booking />} />
-         < Route path="/About/Login/Booking" element={<Booking />} />
-
-
-
-
+           
           <Route path="/view/:email" element={<ViewUser />} />
 
           <Route path="/Admin" element={<Admin />} />

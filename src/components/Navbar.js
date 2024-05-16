@@ -16,7 +16,7 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <NavLink className="nav-link" aria-current="page" to="/SayCheese-f">Home</NavLink>
+                            <NavLink className="nav-link" aria-current="page" to="/">Home</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/Category">Category</NavLink>
@@ -37,8 +37,8 @@ function Navbar() {
 
                     </ul>
                     <form className="d-flex">
-                        <NavLink to="Booking" type="button" className="btn btn-primary me-2">Book Now</NavLink>
-                        <NavLink to="Login" type="button" className="btn btn-info me-2">Log In</NavLink>
+                        <NavLink to="/Booking" type="button" className="btn btn-primary me-2">Book Now</NavLink>
+                        <NavLink to="/Login" type="button" className="btn btn-info me-2">Log In</NavLink>
                     </form>
                 </div>
             </div>
