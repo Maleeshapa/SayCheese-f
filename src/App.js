@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import { CartProvider } from './Context/CartContext'; // Import CartProvider
 
 import Home from './pages/Home';
@@ -23,7 +23,7 @@ import ProductAdd from './pages/Admin/ProductAdd';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <CartProvider> {/* Wrap the entire application with CartProvider */}
         <Routes>
           <Route path="/SayCheese-f" element={<Home />} />
@@ -58,7 +58,7 @@ function App() {
           <Route path="/update/:id" element={<Update />} />
         </Routes>
       </CartProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
